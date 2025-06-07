@@ -10,7 +10,7 @@
 
             <!-- Menu Desktop -->
             <div class="hidden md:flex items-center space-x-8">
-                <a href="#" class="text-gray-700 hover:text-primary font-medium transition">Home</a>
+                <a href="/" class="text-gray-700 hover:text-primary font-medium transition">Home</a>
 
                 <!-- Dropdown -->
                 <div class="relative" x-data="{ open: false }" @click="open = !open" @click.away="open = false">
@@ -25,25 +25,25 @@
 
                     <div x-show="open" class="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg py-2 z-50"
                         style="display: none;">
-                        <a href="#"
+                        <a href="/omsetin-stok"
                             @click="open = false"
                             class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-primary">Omsetin Stok</a>
-                        <a href="#"
+                        <a href="/omsetin-stok"
                             @click="open = false"
                             class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-primary">Omsetin Service</a>
-                        <a href="#"
+                        <a href="/omsetin-stok"
                             @click="open = false"
                             class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-primary">Omsetin Laundry</a>
-                        <a href="#"
+                        <a href="/omsetin-stok"
                             @click="open = false"
                             class="block px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-primary">
                             Omsetin Basic</a>
                     </div>
                 </div>
 
-                <a href="#" class="text-gray-700 hover:text-primary font-medium transition">Harga</a>
-                <a href="#" class="text-gray-700 hover:text-primary font-medium transition">Bantuan</a>
-                <a href="#" class="text-gray-700 hover:text-primary font-medium transition">Kontak Kami</a>
+                <a href="/prices" class="text-gray-700 hover:text-primary font-medium transition">Harga</a>
+                <a href="/help" class="text-gray-700 hover:text-primary font-medium transition">Bantuan</a>
+                <a href="/contact-us" class="text-gray-700 hover:text-primary font-medium transition">Kontak Kami</a>
             </div>
 
             <!-- Tombol CTA & Mobile Menu Toggle -->
@@ -85,16 +85,16 @@
                     </svg>
                 </button>
                 <div x-show="priceDropdownOpen" class="pl-4" style="display: none;">
-                    <a href="#"
+                    <a href="/omsetin-stok"
                         class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-blue-50">Paket
                         Starter</a>
-                    <a href="#"
+                    <a href="/omsetin-stok"
                         class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-blue-50">Paket
                         Bisnis</a>
-                    <a href="#"
+                    <a href="/omsetin-stok"
                         class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-blue-50">Paket
                         Enterprise</a>
-                    <a href="#"
+                    <a href="/omsetin-stok"
                         class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-blue-50">Perbandingan
                         Paket</a>
                 </div>
@@ -104,7 +104,7 @@
                 class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-blue-50">Testimoni</a>
             <a href="#"
                 class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-blue-50">Blog</a>
-            <a href="#"
+            <a href="/contact-us"
                 class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-blue-50">Bantuan</a>
             <a href="#"
                 class="block px-3 py-2 rounded-md text-base font-medium bg-gradient-to-r from-primary to-indigo-700 text-white text-center mt-2">Coba

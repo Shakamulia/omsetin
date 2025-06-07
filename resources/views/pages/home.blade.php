@@ -122,7 +122,8 @@
         </div>
     </section>
 
-        <section class="py-12 bg-white">
+    <!-- Carousel Section -->
+    <section class="py-12 bg-white">
         <div class="container mx-auto px-4">
             <!-- Title -->
             <div class="flex items-center justify-between mb-8">
@@ -241,12 +242,14 @@
         </script>
     </section>
 
+    <!-- Fitur Unggulan Section -->
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             {{-- Judul Section --}}
             <div class="text-center mb-16">
                 <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">
-                    Fitur <span class="text-primary underline decoration-blue-400">Unggulan</span> yang Membantu Bisnis <br>
+                    Fitur <span class="text-primary underline decoration-blue-400">Unggulan</span> yang Membantu Bisnis
+                    <br>
                     <span class="text-primary underline decoration-blue-400">Anda Bekerja Lebih Cepat</span>
                 </h2>
                 <p class="mt-4 text-gray-500 text-lg max-w-2xl mx-auto">
@@ -269,7 +272,8 @@
                     </p>
                 </div>
                 <div class="flex justify-center border-2 border-gray-200">
-                    <img src="{{ asset('img/mockup-phone-right.png') }}" alt="Fitur Transaksi" class="w-64 sm:w-80 md:w-96">
+                    <img src="{{ asset('img/mockup-phone-right.png') }}" alt="Fitur Transaksi"
+                        class="w-64 sm:w-80 md:w-96">
                 </div>
 
                 {{-- Fitur 2 - Gambar Kiri, Text Kanan --}}
@@ -288,6 +292,7 @@
             </div>
         </div>
     </section>
+
 
     <section class="py-16 md:py-24 lg:py-32 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -423,110 +428,83 @@
         </div>
     </section>
 
-    <section class="py-16 bg-gray-50">
-  <div class="container mx-auto px-4">
-    <!-- Header -->
-    <div class="flex flex-col md:flex-row items-start md:items-center justify-between mb-12">
-      <h2 class="text-4xl font-extrabold text-gray-900 relative inline-block">
-        <span class="absolute inset-y-0 left-0 w-full bg-yellow-300 -z-10 transform -skew-x-12"></span>
-        <span class="relative">TESTIMONI</span>
-      </h2>
-      <p class="mt-4 md:mt-0 text-gray-600 max-w-lg">
-        Dengarkan apa kata para pengguna Kasmini yang sudah membuktikan betapa hebatnya Aplikasi Kasmini dalam membantu proses bisnis mereka
-      </p>
-    </div>
+    
+    <section class="max-w-6xl mx-auto py-16 px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold">
+                <span class="bg-yellow-400 px-2 text-black">TESTIMONI</span>
+            </h2>
+            <p class="text-gray-500 mt-2">
+                Dengarkan apa kata para pengguna Kasmini yang sudah membuktikan betapa hebatnya Aplikasi Kasmini dalam
+                membantu proses bisnis mereka
+            </p>
+        </div>
 
-    <!-- Grid 2x2 30/70 -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      @foreach($testimonials as $testimonial)
-        <div class="flex flex-col md:flex-row border border-gray-200">
-          <!-- Thumbnail / Author Photo 30% -->
-          <div class="md:w-1/3 bg-green-900 flex items-center justify-center p-4">
-            <img src="{{ asset($testimonial['photo']) }}" alt="{{ $testimonial['name'] }}" class="w-24 h-24 rounded-full object-cover">
-          </div>
-
-          <!-- Content 70% -->
-          <div class="md:w-2/3 p-6 bg-white flex flex-col justify-between">
-            <p class="text-gray-800 mb-4">"{{ $testimonial['message'] }}"</p>
-            <div>
-              <p class="font-semibold text-gray-900">{{ $testimonial['name'] }}</p>
-              <p class="text-sm text-gray-500">{{ $testimonial['position'] }}, {{ $testimonial['company'] }}</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <!-- Testimoni 1 -->
+            <div class="flex flex-col md:flex-row bg-green-900 text-white p-6">
+                <div class="md:w-1/3 flex items-center justify-center">
+                    <img src="/images/testimonials/sarah.jpg" alt="Sarah" class="w-20 h-20 rounded-full object-cover">
+                </div>
+                <div class="md:w-2/3 mt-4 md:mt-0 md:ml-6">
+                    <p class="mb-4">The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12
+                        months battery life and modern design.</p>
+                    <div>
+                        <p class="font-semibold">Greg-heiger, Co-Founder</p>
+                        <p class="text-sm">Sarah, SEO</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      @endforeach
-    </div>
-  </div>
-</section>
 
-<section class="max-w-6xl mx-auto py-16 px-4">
-  <div class="text-center mb-12">
-    <h2 class="text-4xl font-bold">
-      <span class="bg-yellow-400 px-2 text-black">TESTIMONI</span>
-    </h2>
-    <p class="text-gray-500 mt-2">
-      Dengarkan apa kata para pengguna Kasmini yang sudah membuktikan betapa hebatnya Aplikasi Kasmini dalam membantu proses bisnis mereka
-    </p>
-  </div>
+            <!-- Testimoni 2 -->
+            <div class="flex flex-col md:flex-row bg-white text-black p-6 border border-gray-300">
+                <div class="md:w-1/3 flex items-center justify-center">
+                    <img src="/images/testimonials/sarah.jpg" alt="Sarah" class="w-20 h-20 rounded-full object-cover">
+                </div>
+                <div class="md:w-2/3 mt-4 md:mt-0 md:ml-6">
+                    <p class="mb-4 font-semibold">The Apollotech B340 is an affordable wireless mouse with reliable
+                        connectivity, 12 months battery life and modern design.</p>
+                    <div>
+                        <p class="font-semibold">Greg-heiger, Co-Founder</p>
+                        <p class="text-sm text-gray-500">Sarah, SEO</p>
+                    </div>
+                </div>
+            </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <!-- Testimoni 1 -->
-    <div class="flex flex-col md:flex-row bg-green-900 text-white p-6">
-      <div class="md:w-1/3 flex items-center justify-center">
-        <img src="/images/testimonials/sarah.jpg" alt="Sarah" class="w-20 h-20 rounded-full object-cover">
-      </div>
-      <div class="md:w-2/3 mt-4 md:mt-0 md:ml-6">
-        <p class="mb-4">The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design.</p>
-        <div>
-          <p class="font-semibold">Greg-heiger, Co-Founder</p>
-          <p class="text-sm">Sarah, SEO</p>
-        </div>
-      </div>
-    </div>
+            <!-- Testimoni 3 -->
+            <div class="flex flex-col md:flex-row bg-white text-black p-6 border border-gray-300">
+                <div class="md:w-1/3 flex items-center justify-center">
+                    <img src="/images/testimonials/sarah.jpg" alt="Sarah" class="w-20 h-20 rounded-full object-cover">
+                </div>
+                <div class="md:w-2/3 mt-4 md:mt-0 md:ml-6">
+                    <p class="mb-4">The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12
+                        months battery life and modern design.</p>
+                    <div>
+                        <p class="font-semibold">Greg-heiger, Co-Founder</p>
+                        <p class="text-sm text-gray-500">Sarah, SEO</p>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Testimoni 2 -->
-    <div class="flex flex-col md:flex-row bg-white text-black p-6 border border-gray-300">
-      <div class="md:w-1/3 flex items-center justify-center">
-        <img src="/images/testimonials/sarah.jpg" alt="Sarah" class="w-20 h-20 rounded-full object-cover">
-      </div>
-      <div class="md:w-2/3 mt-4 md:mt-0 md:ml-6">
-        <p class="mb-4 font-semibold">The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design.</p>
-        <div>
-          <p class="font-semibold">Greg-heiger, Co-Founder</p>
-          <p class="text-sm text-gray-500">Sarah, SEO</p>
+            <!-- Testimoni 4 -->
+            <div class="flex flex-col md:flex-row bg-green-900 text-white p-6">
+                <div class="md:w-1/3 flex items-center justify-center">
+                    <img src="/images/testimonials/sarah.jpg" alt="Sarah" class="w-20 h-20 rounded-full object-cover">
+                </div>
+                <div class="md:w-2/3 mt-4 md:mt-0 md:ml-6">
+                    <p class="mb-4">The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12
+                        months battery life and modern design.</p>
+                    <div>
+                        <p class="font-semibold">Greg-heiger, Co-Founder</p>
+                        <p class="text-sm">Sarah, SEO</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- Testimoni 3 -->
-    <div class="flex flex-col md:flex-row bg-white text-black p-6 border border-gray-300">
-      <div class="md:w-1/3 flex items-center justify-center">
-        <img src="/images/testimonials/sarah.jpg" alt="Sarah" class="w-20 h-20 rounded-full object-cover">
-      </div>
-      <div class="md:w-2/3 mt-4 md:mt-0 md:ml-6">
-        <p class="mb-4">The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design.</p>
-        <div>
-          <p class="font-semibold">Greg-heiger, Co-Founder</p>
-          <p class="text-sm text-gray-500">Sarah, SEO</p>
-        </div>
-      </div>
-    </div>
+    <x-cta-footer></x-cta-footer>
 
-    <!-- Testimoni 4 -->
-    <div class="flex flex-col md:flex-row bg-green-900 text-white p-6">
-      <div class="md:w-1/3 flex items-center justify-center">
-        <img src="/images/testimonials/sarah.jpg" alt="Sarah" class="w-20 h-20 rounded-full object-cover">
-      </div>
-      <div class="md:w-2/3 mt-4 md:mt-0 md:ml-6">
-        <p class="mb-4">The Apollotech B340 is an affordable wireless mouse with reliable connectivity, 12 months battery life and modern design.</p>
-        <div>
-          <p class="font-semibold">Greg-heiger, Co-Founder</p>
-          <p class="text-sm">Sarah, SEO</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 @endsection
